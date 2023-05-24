@@ -6,17 +6,18 @@
         <groupId>com.shijie</groupId>
         <artifactId>learn</artifactId>
         <version>0.0.1-SNAPSHOT</version>
+        <relativePath/> <!-- lookup parent from repository -->
     </parent>
-
     <groupId>com.learn</groupId>
-    <artifactId>learn-redis</artifactId>
+    <artifactId>learn-rocketmq</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>learn-redis</name>
-    <description>learn-redis</description>
+    <name>learn-rocketmq</name>
+    <description>learn-rocketmq</description>
     <properties>
         <java.version>1.8</java.version>
     </properties>
     <dependencies>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -59,10 +60,6 @@
             <groupId>redis.clients</groupId>
             <artifactId>jedis</artifactId>
         </dependency>
-<!--        <dependency>-->
-<!--            <groupId>org.apache.commons</groupId>-->
-<!--            <artifactId>commons-pool2</artifactId>-->
-<!--        </dependency>-->
     </dependencies>
 
     <build>
@@ -70,14 +67,6 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <excludes>
-                        <exclude>
-                            <groupId>org.projectlombok</groupId>
-                            <artifactId>lombok</artifactId>
-                        </exclude>
-                    </excludes>
-                </configuration>
             </plugin>
         </plugins>
     </build>
