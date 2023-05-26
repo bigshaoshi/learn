@@ -23,6 +23,7 @@ class LearnRedisApplicationTests {
         user.setUsername("891616942");
         user.setPassword("1314@Wang");
         redisUtil.set("hello",user);
+        Object hello = redisUtil.get("hello");
         System.out.println("hello");
     }
 

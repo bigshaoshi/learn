@@ -1,7 +1,7 @@
 server:
   port: 8081
   servlet:
-    context-path: redis
+    context-path: /redis
 
 spring:
   datasource:
@@ -10,10 +10,16 @@ spring:
     username: root
     password: 1231
   redis:
-    database: 0
-    host: 127.0.0.1
+    # 地址
+    host: 10.1.104.244
+    # 端口，默认为6379
     port: 6379
+    # 数据库索引
+    database: 0
+    # 密码
     password:
+    # 连接超时时间
+    timeout: 100s
     jedis:
       pool: #连接池配置
         max-active: 8 #最大活跃连接数，默认8个。
